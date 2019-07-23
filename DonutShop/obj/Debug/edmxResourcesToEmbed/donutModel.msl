@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DonutsShopModelStoreContainer" CdmEntityContainer="DonutsShopEntities2">
+    <EntitySetMapping Name="Donuts">
+      <EntityTypeMapping TypeName="DonutsShopModel.Donut">
+        <MappingFragment StoreEntitySet="Donuts">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Donuts" ColumnName="Donuts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="mains">
+      <EntityTypeMapping TypeName="DonutsShopModel.main">
+        <MappingFragment StoreEntitySet="main">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="oder" ColumnName="oder" />
+          <ScalarProperty Name="email" ColumnName="email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Regtables">
+      <EntityTypeMapping TypeName="DonutsShopModel.Regtable">
+        <MappingFragment StoreEntitySet="Regtable">
+          <ScalarProperty Name="R_id" ColumnName="R_id" />
+          <ScalarProperty Name="Mobile" ColumnName="Mobile" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserTables">
+      <EntityTypeMapping TypeName="DonutsShopModel.UserTable">
+        <MappingFragment StoreEntitySet="UserTable">
+          <ScalarProperty Name="USER_id" ColumnName="USER_id" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="R_id" ColumnName="R_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
